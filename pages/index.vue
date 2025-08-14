@@ -1,53 +1,67 @@
 <script setup lang="ts">
-  import {
-    PageWrapper,
-    PageHeader,
-    PageDivider,
-    HighlightSection,
-    HighlightCard,
-    FeaturedSection,
-    FeaturedCard,
-    Section,
-    Card,
-  } from "#components";
+import {
+  LandingHero,
+  LandingFeatures,
+  ComponentPreview,
+  InstallationGuide,
+} from "#components";
 
-  const components = {
-    "page-wrapper": PageWrapper,
-    "page-header": PageHeader,
-    "page-divider": PageDivider,
-    "highlight-section": HighlightSection,
-    "highlight-card": HighlightCard,
-    "featured-section": FeaturedSection,
-    "featured-card": FeaturedCard,
-    section: Section,
-    card: Card,
-  };
-
-  const { data: page, error } = await useAsyncData("home", () =>
-    queryContent("/").findOne()
-  );
-
-  if (error.value) {
-    throw createError({
-      statusCode: 404,
-      message: "Page not found",
-      fatal: true,
-    });
-  }
-
-  useSeoMeta({
-    title: page.value?.seo.title,
-    description: page.value?.seo.description,
-    ogTitle: page.value?.seo.title,
-    ogDescription: page.value?.seo.description,
-    ogImage: page.value?.seo.image,
-  });
+useSeoMeta({
+  title: 'Unite UI - TUI Components for BubbleTea',
+  description: 'A modern Terminal User Interface component library for Charmbracelet BubbleTea. Build beautiful terminal applications with prebuilt, customizable components.',
+  ogTitle: 'Unite UI - TUI Components for BubbleTea',
+  ogDescription: 'Build stunning terminal user interfaces with Unite UI. A modern component library for Charmbracelet BubbleTea.',
+  ogImage: '/og-image.jpeg',
+});
 </script>
 
 <template>
   <main>
-    <ContentRenderer :value="page">
-      <ContentRendererMarkdown :value="page" :components="components" />
-    </ContentRenderer>
+    <!-- Hero Section -->
+    <LandingHero />
+
+    <!-- Features Section -->
+    <LandingFeatures />
+
+    <!-- Component Preview -->
+    <ComponentPreview />
+
+    <!-- Installation Guide -->
+    <InstallationGuide />
+
+    <!-- Footer -->
+    <footer class="border-t border-alpha-10 py-12">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+          <div class="flex items-center gap-2">
+            <div class="w-6 h-6 bg-brand-4 rounded flex items-center justify-center">
+              <span class="text-black-1 font-bold text-xs">U</span>
+            </div>
+            <span class="text-secondary text-sm">Unite UI © 2024</span>
+          </div>
+          <div class="flex items-center gap-6">
+            <NuxtLink to="/docs" class="text-sm text-secondary hover:text-primary transition-colors duration-200">
+              Documentation
+            </NuxtLink>
+            <a
+              href="https://github.com/unite-ui/unite-ui"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm text-secondary hover:text-primary transition-colors duration-200"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://twitter.com/uniteui"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm text-secondary hover:text-primary transition-colors duration-200"
+            >
+              Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </main>
 </template>

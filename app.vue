@@ -1,5 +1,6 @@
 <script setup lang="ts">
   const config = useAppConfig();
+  const route = useRoute();
 
   useSeoMeta({
     title: config.site.title,
@@ -24,10 +25,21 @@
   const searchDialogOpen = useState<boolean>("searchDialogOpen", () => false);
   const submitDialogOpen = useState<boolean>("submitDialogOpen", () => false);
   const sidebarOpen = useState<boolean>("sidebarOpen", () => false);
+
+  // Check if we're on the landing page
+  const isLandingPage = computed(() => route.path === '/');
 </script>
 
 <template>
-  <div class="flex flex-col lg:flex-row w-full h-screen bg-primary">
+  <div v-if="isLandingPage">
+    <!-- Landing page with header nav -->
+    <HeaderNav />
+    <div class="min-h-screen bg-primary">
+      <NuxtPage />
+    </div>
+  </div>
+  <div v-else class="flex flex-col lg:flex-row w-full h-screen bg-primary">
+    <!-- Original layout for all other pages -->
     <HeadlessTransitionRoot as="template" :show="sidebarOpen">
       <HeadlessDialog
         as="div"

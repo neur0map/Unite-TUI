@@ -1,10 +1,10 @@
 export default defineAppConfig({
   site: {
-    title: "DailyHub - Inspire, Create, Elevate",
+    title: "Unite UI - TUI Components for BubbleTea",
     description:
-      "DailyHub is your creative sanctuary, curating a daily dose of inspiration for designers, artists, and innovators.",
+      "A modern Terminal User Interface (TUI) component library for Charmbracelet BubbleTea. Build beautiful terminal applications with prebuilt, customizable components.",
     image: "/og-image.jpeg",
-    url: "https://dailyhub-nuxt.stylokit.dev",
+    url: "https://unite-ui.dev",
   },
   logo: {
     show: true,
@@ -16,7 +16,7 @@ export default defineAppConfig({
     placeholder: "Search",
   },
   submitDialog: {
-    show: true,
+    show: false,
     triggerText: "Submit",
     triggerIcon: "heroicons:cursor-arrow-rays",
     triggerVariant: "secondary",
@@ -32,19 +32,44 @@ export default defineAppConfig({
     },
   },
   buyButton: {
-    show: true,
+    show: false,
     buttonText: "Buy Template",
     buttonVariant: "primary",
     link: "https://stylokit.lemonsqueezy.com/buy/5eed5001-9087-405b-a414-d654b9597e5d",
+  },
+  navigation: {
+    header: [
+      {
+        label: "Home",
+        link: "/",
+      },
+      {
+        label: "Library",
+        link: "/library",
+      },
+      {
+        label: "Documentation",
+        link: "/docs",
+      },
+      {
+        label: "Examples",
+        link: "/examples",
+      },
+      {
+        label: "GitHub",
+        link: "https://github.com/unite-ui/unite-ui",
+        external: true,
+      },
+    ],
   },
   menus: [
     {
       subheader: null,
       items: [
         {
-          label: "Discover",
+          label: "Library",
           icon: "heroicons:clock",
-          link: "/",
+          link: "/library",
         },
         {
           label: "Info",
