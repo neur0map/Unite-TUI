@@ -38,6 +38,7 @@
                 v-for="item in menu.items"
                 :to="item.link"
                 :icon="item.icon"
+                :children="item.children"
                 >{{ item.label }}</MenuItem
               >
             </SidebarMenu>

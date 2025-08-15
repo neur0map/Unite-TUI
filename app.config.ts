@@ -82,40 +82,22 @@ export default defineAppConfig({
       subheader: "SOURCE",
       items: [
         {
-          label: "Inspirations",
+          label: "BubbleTea",
           icon: "heroicons:fire",
-          link: "/inspirations",
-        },
-        {
-          label: "Templates",
-          icon: "heroicons:document-duplicate",
-          link: "/templates",
-        },
-        {
-          label: "Design Systems",
-          icon: "heroicons:ellipsis-horizontal",
-          link: "/systems",
-        },
-        {
-          label: "Premium UI Kits",
-          icon: "heroicons:newspaper",
-          link: "/premium",
-        },
-        {
-          label: "Icons",
-          icon: "heroicons:queue-list",
-          link: "/icons",
-        },
-        {
-          label: "Typography",
-          icon: "heroicons:language",
-          link: "/typography",
-        },
-        {
-          label: "Design Tools",
-          icon: "heroicons:rocket-launch",
-          link: "/tools",
-        },
+          link: "/bubbletea",
+          children: [
+            {
+              label: "Getting Started",
+              icon: "heroicons:play",
+              link: "/bubbletea/getting-started",
+            },
+            {
+              label: "Examples",
+              icon: "heroicons:code-bracket",
+              link: "/bubbletea/examples",
+            },
+          ],
+        }
       ],
     },
   ],
