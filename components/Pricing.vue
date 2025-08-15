@@ -1,55 +1,40 @@
 <template>
   <PricingSection
-    title="Sponsorship"
-    description="DailyHub empowers designers with the latest tools and resources,
-          optimizing workflows for thousands each month."
-    :yearly-discount="45"
-    v-slot="{ yearlyToggled }"
+    title="Support the TUI Ecosystem"
+    description="Help build the future of terminal user interfaces. Your support enables continued development of high-quality TUI tools and components for the Go community."
+    :hide-toggle="true"
   >
     <PricingCard
       variant="pro"
-      title="Pro tier"
-      desc="Premium access"
-      :price="yearlyToggled ? '$102' : '$19'"
-      :interval="yearlyToggled ? '/yearly' : '/month'"
+      title="Unite UI"
+      desc="Support Unite UI development"
+      price="$5+"
+      interval="/month"
       :features="[
-        'Priority Support',
-        'Exclusive Content',
-        'Early Access',
-        'VIP Events',
-        'Pro Features',
+        'Support open source development',
+        'Help maintain high-quality components',
+        'Enable new feature development',
+        'Contribute to community growth',
+        'Make TUI development accessible',
       ]"
-      :buttonText="yearlyToggled ? 'Choose Yearly' : 'Choose Month'"
+      buttonText="Support Unite UI"
+      buttonLink="https://github.com/sponsors/unite-ui"
     />
     <PricingCard
       variant="elite"
-      title="Elite tier"
-      desc="Premium access"
-      :price="yearlyToggled ? '$156' : '$29'"
-      :interval="yearlyToggled ? '/yearly' : '/month'"
+      title="Charmbracelet"
+      desc="Support TUI framework creators"
+      price="$5+"
+      interval="/month"
       :features="[
-        'Priority Support',
-        'Exclusive Content',
-        'Early Access',
-        'VIP Events',
-        'Pro Features',
+        'Support BubbleTea framework',
+        'Enable Lipgloss development',
+        'Fund TUI innovation',
+        'Help core team focus full-time',
+        'Drive terminal UI evolution',
       ]"
-      :buttonText="yearlyToggled ? 'Choose Yearly' : 'Choose Month'"
-    />
-    <PricingCard
-      variant="diamond"
-      title="Diamond tier"
-      desc="Premium access"
-      :price="yearlyToggled ? '$534' : '$99'"
-      :interval="yearlyToggled ? '/yearly' : '/month'"
-      :features="[
-        'Priority Support',
-        'Exclusive Content',
-        'Early Access',
-        'VIP Events',
-        'Pro Features',
-      ]"
-      :buttonText="yearlyToggled ? 'Choose Yearly' : 'Choose Month'"
+      buttonText="Support Charmbracelet"
+      buttonLink="https://github.com/sponsors/charmbracelet"
     />
   </PricingSection>
 </template>

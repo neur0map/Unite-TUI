@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  defineProps({
+  const props = defineProps({
     title: {
       required: true,
       type: String,
@@ -11,6 +11,11 @@
     yearlyDiscount: {
       required: false,
       type: Number,
+    },
+    hideToggle: {
+      required: false,
+      type: Boolean,
+      default: false,
     },
   });
   const yearlyToggle = ref(false);
@@ -26,7 +31,7 @@
     </div>
     <div class="flex flex-col gap-12">
       <!-- Pricing Tabs -->
-      <div class="mx-auto">
+      <div v-if="!props.hideToggle" class="mx-auto">
         <PricingSwitch
           v-model="yearlyToggle"
           label="Monthly"

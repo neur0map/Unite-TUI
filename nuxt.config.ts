@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@nuxt/content",
     "@nuxt/image",
+    "@vueuse/motion/nuxt",
   ],
   headlessui: {
     prefix: "Headless",
@@ -63,5 +64,12 @@ export default defineNuxtConfig({
         "tsx",
       ],
     },
+  },
+  runtimeConfig: {
+    public: {
+      motion: {
+        directives: {}
+      }
+    }
   },
 });

@@ -1,12 +1,12 @@
 ---
 seo:
-  title: DailyHub - Sponsor
-  description: DailyHub is a platform for news and information.
+  title: Unite UI - Patron Support
+  description: Support Unite UI development and help build the future of terminal user interfaces.
   image: /og-image.jpeg
 ---
 
 ::page-wrapper
-  :::page-header{buy-button submit-button title="Sponsor"}
+  :::page-header{title="Patron Support"}
   :::
 
   :::page-divider

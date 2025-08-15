@@ -1,19 +1,14 @@
 <script setup lang="ts">
   const config = useAppConfig();
   const isOpen = defineModel();
-  const submitFormLoading = ref(false);
-  const submitFormSuccess = ref(false);
-
-  function submit() {
-    submitFormLoading.value = true;
-    setTimeout(() => {
-      submitFormLoading.value = false;
-      submitFormSuccess.value = true;
-    }, 2000);
-  }
 
   function closeModal() {
     isOpen.value = false;
+  }
+
+  function goToGitHub() {
+    window.open('https://github.com/unite-ui/unite-ui', '_blank');
+    closeModal();
   }
 </script>
 
@@ -55,21 +50,33 @@
               >
                 <Icon name="heroicons:x-mark-solid" size="20px" />
               </IconButton>
-              <HeadlessDialogTitle as="h3" class="heading-4 text-primary">
+              
+              <!-- Logo -->
+              <div class="flex justify-center mb-4">
+                <img src="/logo.png" alt="Unite UI Logo" class="w-12 h-12 object-contain" />
+              </div>
+
+              <HeadlessDialogTitle as="h3" class="heading-4 text-primary text-center">
                 {{ config.submitDialog.dialogTitle }}
               </HeadlessDialogTitle>
               <div class="mt-2">
-                <p class="body-2 text-help">
+                <p class="body-2 text-help text-center">
                   {{ config.submitDialog.dialogDescription }}
                 </p>
               </div>
 
-              <SubmitForm
-                class="mt-6"
-                @submit="submit"
-                :loading="submitFormLoading"
-                :success="submitFormSuccess"
-              />
+              <!-- GitHub Button -->
+              <div class="mt-6">
+                <Button
+                  @click="goToGitHub"
+                  variant="primary"
+                  size="lg"
+                  class="w-full"
+                >
+                  <Icon name="simple-icons:github" size="16px" />
+                  <span>View on GitHub</span>
+                </Button>
+              </div>
             </HeadlessDialogPanel>
           </HeadlessTransitionChild>
         </div>

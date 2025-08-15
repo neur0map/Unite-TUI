@@ -16,15 +16,15 @@ export default defineAppConfig({
     placeholder: "Search",
   },
   submitDialog: {
-    show: false,
+    show: true,
     triggerText: "Submit",
     triggerIcon: "heroicons:cursor-arrow-rays",
     triggerVariant: "secondary",
-    dialogTitle: "Submit Your Website",
+    dialogTitle: "Submit Your TUI Design",
     dialogDescription:
-      "Found a site you fancy? If it clicks with us too, watch for it in our catalog!",
+      "Found a TUI design you fancy? If it clicks with us too, watch for it in our catalog!",
     form: {
-      inputPlaceholder: "URL",
+      inputPlaceholder: "TUI Design URL",
       submitButtonText: "Submit",
       submitButtonIcon: "heroicons:arrow-right-solid",
       submitButtonVariant: "primary",
@@ -40,25 +40,15 @@ export default defineAppConfig({
   navigation: {
     header: [
       {
-        label: "Home",
-        link: "/",
-      },
-      {
         label: "Library",
         link: "/library",
-      },
-      {
-        label: "Documentation",
-        link: "/docs",
-      },
-      {
-        label: "Examples",
-        link: "/examples",
+        icon: "heroicons:book-open",
       },
       {
         label: "GitHub",
         link: "https://github.com/unite-ui/unite-ui",
         external: true,
+        icon: "simple-icons:github",
       },
     ],
   },
@@ -77,8 +67,8 @@ export default defineAppConfig({
           link: "/info",
         },
         {
-          label: "A Sponsor",
-          icon: "heroicons:banknotes",
+          label: "Patron Support",
+          icon: "heroicons:heart",
           link: "/sponsor",
         },
         {

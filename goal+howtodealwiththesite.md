@@ -6,22 +6,24 @@
 ## 🚀 Main Redesign Tasks
 
 ### 1. Create New Landing Page
-- [ ] Create a separate landing page distinct from current directory template
-- [ ] Design hero section highlighting Unite UI's purpose
-- [ ] Add sections for:
-  - [ ] What is Unite UI (TUI library explanation)
-  - [ ] Key features (prebuilt components, BubbleTea integration)
-  - [ ] Component showcase/gallery
-  - [ ] Installation guide
-  - [ ] Quick start code examples
-  - [ ] Documentation links
-  - [ ] GitHub integration
+- [x] Create a separate landing page distinct from current directory template
+- [x] Design hero section highlighting Unite UI's purpose
+- [x] Add sections for:
+  - [x] What is Unite UI (TUI library explanation)
+  - [x] Key features (prebuilt components, BubbleTea integration)
+  - [x] Component showcase/gallery
+  - [x] Installation guide
+  - [x] Quick start code examples
+  - [x] Documentation links
+  - [x] GitHub integration
 
 ### 2. Branding Updates
-- [ ] Update site title from "DailyHub" to "Unite UI"
-- [ ] Change tagline to reflect TUI library purpose
-- [ ] Update color scheme to match terminal/CLI aesthetic
-- [ ] Create new logo for Unite UI
+- [x] Update site title from "DailyHub" to "Unite UI"
+- [x] Change tagline to reflect TUI library purpose
+- [x] Update color scheme to match terminal/CLI aesthetic
+- [x] Create new logo for Unite UI
+- [x] Fix sidebar logo text from "DailyHub" to "Unite UI" (LogoBrand.vue)
+- [x] Update info page with Unite UI content and proper formatting
 - [ ] Update favicon and social media images
 
 ### 3. Content Structure Changes
@@ -321,3 +323,35 @@ unite-ui/
 - [ ] Configure SEO → Add frontmatter to markdown files
 - [ ] Toggle features → Edit `app.config.ts` (search, submit, buy button)
 - [ ] Customize header → Modify `components/PageHeader.vue`
+
+## 📝 Recent Changes Log
+
+### Logo and Branding Fixes (Current Session)
+**Files Modified:**
+- `components/LogoBrand.vue` - Updated sidebar logo text from "DailyHub" to "Unite UI"
+- `content/info.md` - Complete content overhaul for Unite UI branding
+
+**LogoBrand.vue Changes:**
+- Replaced complex DailyHub SVG path with simple text element
+- Changed text content from "DailyHub" to "Unite UI"
+- Simplified SVG structure while maintaining visual consistency
+
+**Info Page Changes:**
+- Updated SEO title from "Dailyhub - Info" to "Unite UI - About"
+- Updated SEO description to reflect TUI library purpose
+- Changed image reference from `/info.png` to `/logo.png`
+- Replaced all DailyHub content with Unite UI-focused content
+- Removed sponsor/submit sections that don't apply to Unite UI
+- Used proper wrapper structure: `page-wrapper > page-header > page-divider > info-wrapper > info-section`
+
+**Content Formatting Lessons Learned:**
+- **CRITICAL**: Avoid bold text with dashes (`**Text** - description`) in info-section components as it causes dark blue text visibility issues
+- **SOLUTION**: Use simple paragraph text without special markdown formatting, matching the original template style
+- **PROPER FORMAT**: Plain text paragraphs separated by blank lines, exactly like original content structure
+
+**Best Practices for Content Updates:**
+1. Always check original formatting before making changes (`git show HEAD~1:filepath`)
+2. Use simple paragraph text in info-section components
+3. Maintain wrapper hierarchy as defined in component system
+4. Test text visibility after content changes
+5. Keep content structure consistent with original template patterns

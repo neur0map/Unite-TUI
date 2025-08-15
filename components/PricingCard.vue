@@ -32,6 +32,11 @@
       type: String,
       default: "Choose month",
     },
+    buttonLink: {
+      required: false,
+      type: String,
+      default: "",
+    },
   });
 
   const buttonVariant =
@@ -110,6 +115,15 @@
     </div>
 
     <Button
+      v-if="buttonLink"
+      :variant="buttonVariant"
+      size="lg"
+      @click="window.open(buttonLink, '_blank')"
+    >
+      {{ buttonText }}
+    </Button>
+    <Button
+      v-else
       :variant="buttonVariant"
       size="lg"
       @click="$emit('select', variant)"

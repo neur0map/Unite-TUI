@@ -30,24 +30,24 @@ useSeoMeta({
     <InstallationGuide />
 
     <!-- Footer -->
-    <footer class="border-t border-alpha-10 py-12">
+    <footer class="border-t border-alpha-10 py-8 sm:py-12">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
-          <div class="flex items-center gap-2">
-            <div class="w-6 h-6 bg-brand-4 rounded flex items-center justify-center">
-              <span class="text-black-1 font-bold text-xs">U</span>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 sm:w-6 sm:h-6 flex items-center justify-center">
+              <img src="/logo.png" alt="Unite UI Logo" class="w-8 h-8 sm:w-6 sm:h-6 object-contain" />
             </div>
-            <span class="text-secondary text-sm">Unite UI © 2024</span>
+            <span class="text-secondary text-base sm:text-sm">Unite UI © 2024</span>
           </div>
-          <div class="flex items-center gap-6">
-            <NuxtLink to="/docs" class="text-sm text-secondary hover:text-primary transition-colors duration-200">
+          <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-6">
+            <NuxtLink to="/docs" class="text-base sm:text-sm text-secondary hover:text-primary transition-colors duration-200">
               Documentation
             </NuxtLink>
             <a
               href="https://github.com/unite-ui/unite-ui"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-sm text-secondary hover:text-primary transition-colors duration-200"
+              class="text-base sm:text-sm text-secondary hover:text-primary transition-colors duration-200"
             >
               GitHub
             </a>
@@ -55,7 +55,7 @@ useSeoMeta({
               href="https://twitter.com/uniteui"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-sm text-secondary hover:text-primary transition-colors duration-200"
+              class="text-base sm:text-sm text-secondary hover:text-primary transition-colors duration-200"
             >
               Twitter
             </a>
