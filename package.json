@@ -7,7 +7,11 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "thumbnails": "./scripts/generate-thumbnails-large.sh",
+    "extract-code": "./scripts/extract-go-code.sh",
+    "code-index": "./scripts/generate-code-index.sh",
+    "setup-examples": "./scripts/extract-go-code.sh && ./scripts/generate-code-index.sh && ./scripts/generate-thumbnails-large.sh"
   },
   "dependencies": {
     "@nuxt/image": "^1.8.1",

@@ -10,25 +10,27 @@ interface Example {
 }
 
 export const useExamples = () => {
-  // Example data mapped from the existing folder structure
+  // Complete example data based on actual folder structure
   const examples: Example[] = [
-    // Basic Components
+    // Basic Examples
     {
       name: 'simple',
       title: 'Simple Hello World',
-      description: 'A basic BubbleTea application that displays text and handles quit commands.',
+      description: 'A simple program that counts down from 5 and then exits.',
       category: 'Basics',
-      tags: ['hello world', 'basic', 'getting started'],
+      tags: ['hello world', 'basic', 'getting started', 'countdown'],
       difficulty: 'beginner',
       hasVideo: true,
       videoType: 'gif'
     },
+
+    // Input Components
     {
       name: 'textinput',
       title: 'Text Input',
       description: 'Interactive text input field with validation and styling.',
       category: 'Input Components',
-      tags: ['input', 'text', 'forms'],
+      tags: ['input', 'text', 'forms', 'validation'],
       difficulty: 'beginner',
       hasVideo: true,
       videoType: 'gif'
@@ -38,7 +40,7 @@ export const useExamples = () => {
       title: 'Multiple Text Inputs',
       description: 'Form with multiple text input fields and navigation between them.',
       category: 'Input Components',
-      tags: ['input', 'forms', 'navigation'],
+      tags: ['input', 'forms', 'navigation', 'multiple'],
       difficulty: 'intermediate',
       hasVideo: true,
       videoType: 'gif'
@@ -51,6 +53,16 @@ export const useExamples = () => {
       tags: ['textarea', 'multiline', 'text'],
       difficulty: 'intermediate',
       hasVideo: true,
+      videoType: 'gif'
+    },
+    {
+      name: 'autocomplete',
+      title: 'Autocomplete Input',
+      description: 'Text input with live autocomplete suggestions.',
+      category: 'Input Components',
+      tags: ['autocomplete', 'suggestions', 'input'],
+      difficulty: 'intermediate',
+      hasVideo: false,
       videoType: 'gif'
     },
 
@@ -83,7 +95,7 @@ export const useExamples = () => {
       tags: ['list', 'advanced', 'animations'],
       difficulty: 'advanced',
       hasVideo: true,
-      videoType: 'mp4'
+      videoType: 'gif'
     },
     {
       name: 'table',
@@ -102,7 +114,7 @@ export const useExamples = () => {
       category: 'Lists & Tables',
       tags: ['table', 'responsive', 'resize'],
       difficulty: 'advanced',
-      hasVideo: true,
+      hasVideo: false,
       videoType: 'gif'
     },
 
@@ -154,7 +166,7 @@ export const useExamples = () => {
       category: 'Progress & Loading',
       tags: ['progress', 'download', 'real-time'],
       difficulty: 'advanced',
-      hasVideo: true,
+      hasVideo: false,
       videoType: 'gif'
     },
 
@@ -177,7 +189,7 @@ export const useExamples = () => {
       tags: ['views', 'states', 'transitions'],
       difficulty: 'advanced',
       hasVideo: true,
-      videoType: 'mp4'
+      videoType: 'gif'
     },
     {
       name: 'split-editors',
@@ -187,7 +199,7 @@ export const useExamples = () => {
       tags: ['split', 'editors', 'sync'],
       difficulty: 'advanced',
       hasVideo: true,
-      videoType: 'mp4'
+      videoType: 'gif'
     },
     {
       name: 'pager',
@@ -209,6 +221,16 @@ export const useExamples = () => {
       hasVideo: true,
       videoType: 'gif'
     },
+    {
+      name: 'composable-views',
+      title: 'Composable Views',
+      description: 'Complex layout with multiple composable view components.',
+      category: 'Navigation & Layout',
+      tags: ['composable', 'layout', 'complex'],
+      difficulty: 'advanced',
+      hasVideo: true,
+      videoType: 'gif'
+    },
 
     // Interactive Examples
     {
@@ -218,8 +240,8 @@ export const useExamples = () => {
       category: 'Interactive',
       tags: ['chat', 'real-time', 'messages'],
       difficulty: 'advanced',
-      hasVideo: true,
-      videoType: 'mp4'
+      hasVideo: false,
+      videoType: 'gif'
     },
     {
       name: 'credit-card-form',
@@ -238,119 +260,89 @@ export const useExamples = () => {
       category: 'Interactive',
       tags: ['file', 'picker', 'browser'],
       difficulty: 'intermediate',
-      hasVideo: true,
-      videoType: 'gif'
-    },
-    {
-      name: 'autocomplete',
-      title: 'Autocomplete Input',
-      description: 'Text input with live autocomplete suggestions.',
-      category: 'Interactive',
-      tags: ['autocomplete', 'suggestions', 'search'],
-      difficulty: 'intermediate',
-      hasVideo: true,
+      hasVideo: false,
       videoType: 'gif'
     },
     {
       name: 'package-manager',
       title: 'Package Manager',
-      description: 'TUI package manager with installation and management features.',
+      description: 'Package manager interface with installation progress.',
       category: 'Interactive',
       tags: ['package', 'manager', 'installation'],
       difficulty: 'advanced',
       hasVideo: true,
-      videoType: 'mp4'
+      videoType: 'gif'
     },
-
-    // Advanced Features
     {
       name: 'mouse',
       title: 'Mouse Support',
-      description: 'Application with full mouse interaction support.',
-      category: 'Advanced',
-      tags: ['mouse', 'interaction', 'click'],
+      description: 'Application demonstrating mouse input and click handling.',
+      category: 'Interactive',
+      tags: ['mouse', 'click', 'input'],
       difficulty: 'intermediate',
-      hasVideo: true,
+      hasVideo: false,
       videoType: 'gif'
     },
+
+    // Animation and Real-time
     {
-      name: 'focus-blur',
-      title: 'Focus Management',
-      description: 'Component focus and blur event handling.',
-      category: 'Advanced',
-      tags: ['focus', 'blur', 'events'],
-      difficulty: 'intermediate',
-      hasVideo: true,
-      videoType: 'gif'
-    },
-    {
-      name: 'fullscreen',
-      title: 'Fullscreen Mode',
-      description: 'Toggle between normal and fullscreen terminal modes.',
-      category: 'Advanced',
-      tags: ['fullscreen', 'mode', 'toggle'],
-      difficulty: 'intermediate',
-      hasVideo: true,
-      videoType: 'gif'
-    },
-    {
-      name: 'altscreen-toggle',
-      title: 'Alternate Screen',
-      description: 'Switch between main and alternate terminal screens.',
-      category: 'Advanced',
-      tags: ['altscreen', 'terminal', 'switch'],
+      name: 'realtime',
+      title: 'Real-time Updates',
+      description: 'Live data updates with smooth animations and transitions.',
+      category: 'Animation & Real-time',
+      tags: ['real-time', 'live', 'updates'],
       difficulty: 'advanced',
       hasVideo: true,
       videoType: 'gif'
     },
     {
-      name: 'window-size',
-      title: 'Window Resize Handling',
-      description: 'Responsive layout that adapts to terminal window size.',
-      category: 'Advanced',
-      tags: ['resize', 'responsive', 'window'],
-      difficulty: 'intermediate',
+      name: 'sequence',
+      title: 'Command Sequence',
+      description: 'Sequential command execution with progress tracking.',
+      category: 'Animation & Real-time',
+      tags: ['sequence', 'commands', 'progress'],
+      difficulty: 'advanced',
       hasVideo: true,
       videoType: 'gif'
     },
-    {
-      name: 'set-window-title',
-      title: 'Window Title Control',
-      description: 'Dynamically set and update terminal window title.',
-      category: 'Advanced',
-      tags: ['title', 'window', 'control'],
-      difficulty: 'beginner',
-      hasVideo: true,
-      videoType: 'gif'
-    },
-
-    // Utilities and Tools
     {
       name: 'timer',
-      title: 'Timer',
-      description: 'Countdown timer with customizable duration and alerts.',
-      category: 'Utilities',
-      tags: ['timer', 'countdown', 'alerts'],
-      difficulty: 'beginner',
+      title: 'Timer Application',
+      description: 'Countdown timer with start, stop, and reset functionality.',
+      category: 'Animation & Real-time',
+      tags: ['timer', 'countdown', 'controls'],
+      difficulty: 'intermediate',
       hasVideo: true,
       videoType: 'gif'
     },
     {
       name: 'stopwatch',
       title: 'Stopwatch',
-      description: 'Precision stopwatch with lap times and controls.',
-      category: 'Utilities',
-      tags: ['stopwatch', 'timing', 'laps'],
+      description: 'Precise stopwatch with lap times and formatting.',
+      category: 'Animation & Real-time',
+      tags: ['stopwatch', 'timing', 'precision'],
       difficulty: 'intermediate',
       hasVideo: true,
       videoType: 'gif'
     },
     {
+      name: 'debounce',
+      title: 'Debounced Input',
+      description: 'Input field with debounced search and real-time results.',
+      category: 'Animation & Real-time',
+      tags: ['debounce', 'search', 'performance'],
+      difficulty: 'intermediate',
+      hasVideo: true,
+      videoType: 'gif'
+    },
+
+    // Content and Media
+    {
       name: 'glamour',
       title: 'Markdown Renderer',
       description: 'Beautiful markdown rendering with syntax highlighting.',
-      category: 'Utilities',
-      tags: ['markdown', 'rendering', 'syntax'],
+      category: 'Content & Media',
+      tags: ['markdown', 'rendering', 'glamour'],
       difficulty: 'intermediate',
       hasVideo: true,
       videoType: 'gif'
@@ -358,10 +350,20 @@ export const useExamples = () => {
     {
       name: 'help',
       title: 'Help System',
-      description: 'Interactive help system with keyboard shortcuts.',
-      category: 'Utilities',
-      tags: ['help', 'shortcuts', 'documentation'],
+      description: 'Interactive help system with keyboard shortcuts display.',
+      category: 'Content & Media',
+      tags: ['help', 'documentation', 'shortcuts'],
       difficulty: 'intermediate',
+      hasVideo: true,
+      videoType: 'gif'
+    },
+    {
+      name: 'result',
+      title: 'Result Display',
+      description: 'Formatted result display with status indicators.',
+      category: 'Content & Media',
+      tags: ['result', 'display', 'status'],
+      difficulty: 'beginner',
       hasVideo: true,
       videoType: 'gif'
     },
@@ -370,8 +372,8 @@ export const useExamples = () => {
     {
       name: 'exec',
       title: 'Command Execution',
-      description: 'Execute external commands and display output.',
-      category: 'System',
+      description: 'Execute external commands with output capture.',
+      category: 'System Integration',
       tags: ['exec', 'commands', 'output'],
       difficulty: 'advanced',
       hasVideo: true,
@@ -379,20 +381,30 @@ export const useExamples = () => {
     },
     {
       name: 'pipe',
-      title: 'Pipe Integration',
-      description: 'Handle piped input and output in TUI applications.',
-      category: 'System',
-      tags: ['pipe', 'input', 'output'],
+      title: 'Pipe Input',
+      description: 'Handle piped input from other commands or processes.',
+      category: 'System Integration',
+      tags: ['pipe', 'input', 'stdin'],
       difficulty: 'advanced',
       hasVideo: true,
       videoType: 'gif'
     },
     {
-      name: 'suspend',
-      title: 'Process Suspension',
-      description: 'Suspend and resume TUI application properly.',
-      category: 'System',
-      tags: ['suspend', 'resume', 'process'],
+      name: 'http',
+      title: 'HTTP Client',
+      description: 'HTTP request client with progress and response display.',
+      category: 'System Integration',
+      tags: ['http', 'client', 'requests'],
+      difficulty: 'advanced',
+      hasVideo: true,
+      videoType: 'gif'
+    },
+    {
+      name: 'send-msg',
+      title: 'Message Sending',
+      description: 'Send messages between different parts of the application.',
+      category: 'System Integration',
+      tags: ['messages', 'communication', 'events'],
       difficulty: 'advanced',
       hasVideo: true,
       videoType: 'gif'
@@ -400,137 +412,118 @@ export const useExamples = () => {
     {
       name: 'tui-daemon-combo',
       title: 'TUI + Daemon',
-      description: 'Combine TUI interface with background daemon process.',
-      category: 'System',
-      tags: ['daemon', 'background', 'process'],
+      description: 'Combination of TUI frontend with background daemon process.',
+      category: 'System Integration',
+      tags: ['daemon', 'background', 'combo'],
       difficulty: 'advanced',
-      hasVideo: true,
-      videoType: 'mp4'
-    },
-    {
-      name: 'prevent-quit',
-      title: 'Quit Prevention',
-      description: 'Prevent accidental application exit with confirmation.',
-      category: 'System',
-      tags: ['quit', 'prevention', 'confirmation'],
-      difficulty: 'beginner',
       hasVideo: true,
       videoType: 'gif'
     },
 
-    // Performance and Optimization
+    // Advanced Features
     {
-      name: 'debounce',
-      title: 'Input Debouncing',
-      description: 'Debounce user input for performance optimization.',
-      category: 'Performance',
-      tags: ['debounce', 'performance', 'input'],
-      difficulty: 'intermediate',
+      name: 'altscreen-toggle',
+      title: 'Alt Screen Toggle',
+      description: 'Toggle between normal and alternate screen buffers.',
+      category: 'Advanced Features',
+      tags: ['altscreen', 'toggle', 'buffers'],
+      difficulty: 'advanced',
       hasVideo: true,
       videoType: 'gif'
     },
     {
-      name: 'realtime',
-      title: 'Real-time Updates',
-      description: 'Handle real-time data updates efficiently.',
-      category: 'Performance',
-      tags: ['realtime', 'updates', 'performance'],
+      name: 'fullscreen',
+      title: 'Fullscreen Mode',
+      description: 'Enter and exit fullscreen terminal mode.',
+      category: 'Advanced Features',
+      tags: ['fullscreen', 'mode', 'terminal'],
       difficulty: 'advanced',
       hasVideo: true,
-      videoType: 'mp4'
+      videoType: 'gif'
+    },
+    {
+      name: 'window-size',
+      title: 'Window Resize',
+      description: 'Handle terminal window resize events dynamically.',
+      category: 'Advanced Features',
+      tags: ['resize', 'window', 'dynamic'],
+      difficulty: 'intermediate',
+      hasVideo: false,
+      videoType: 'gif'
+    },
+    {
+      name: 'focus-blur',
+      title: 'Focus and Blur',
+      description: 'Handle terminal focus and blur events.',
+      category: 'Advanced Features',
+      tags: ['focus', 'blur', 'events'],
+      difficulty: 'intermediate',
+      hasVideo: false,
+      videoType: 'gif'
+    },
+    {
+      name: 'suspend',
+      title: 'Process Suspension',
+      description: 'Handle process suspension and resume (Ctrl+Z).',
+      category: 'Advanced Features',
+      tags: ['suspend', 'process', 'signals'],
+      difficulty: 'advanced',
+      hasVideo: false,
+      videoType: 'gif'
+    },
+    {
+      name: 'prevent-quit',
+      title: 'Prevent Quit',
+      description: 'Prevent accidental application termination with confirmation.',
+      category: 'Advanced Features',
+      tags: ['quit', 'confirmation', 'prevention'],
+      difficulty: 'intermediate',
+      hasVideo: false,
+      videoType: 'gif'
+    },
+    {
+      name: 'set-window-title',
+      title: 'Window Title',
+      description: 'Set and update the terminal window title dynamically.',
+      category: 'Advanced Features',
+      tags: ['title', 'window', 'dynamic'],
+      difficulty: 'beginner',
+      hasVideo: false,
+      videoType: 'gif'
     },
     {
       name: 'cellbuffer',
       title: 'Cell Buffer',
-      description: 'Low-level cell buffer manipulation for performance.',
-      category: 'Performance',
-      tags: ['buffer', 'cells', 'low-level'],
+      description: 'Low-level cell buffer manipulation for custom rendering.',
+      category: 'Advanced Features',
+      tags: ['buffer', 'cells', 'rendering'],
       difficulty: 'advanced',
-      hasVideo: true,
-      videoType: 'gif'
-    },
-
-    // Communication
-    {
-      name: 'http',
-      title: 'HTTP Requests',
-      description: 'Make HTTP requests and display responses in TUI.',
-      category: 'Communication',
-      tags: ['http', 'requests', 'api'],
-      difficulty: 'intermediate',
-      hasVideo: true,
-      videoType: 'gif'
-    },
-    {
-      name: 'send-msg',
-      title: 'Message Sending',
-      description: 'Send custom messages between components.',
-      category: 'Communication',
-      tags: ['messages', 'communication', 'components'],
-      difficulty: 'intermediate',
-      hasVideo: true,
-      videoType: 'gif'
-    },
-    {
-      name: 'sequence',
-      title: 'Command Sequences',
-      description: 'Execute sequences of commands with proper timing.',
-      category: 'Communication',
-      tags: ['sequence', 'commands', 'timing'],
-      difficulty: 'advanced',
-      hasVideo: true,
-      videoType: 'gif'
-    },
-
-    // Architecture Patterns
-    {
-      name: 'composable-views',
-      title: 'Composable Views',
-      description: 'Build complex UIs with composable view components.',
-      category: 'Architecture',
-      tags: ['composable', 'views', 'architecture'],
-      difficulty: 'advanced',
-      hasVideo: true,
-      videoType: 'mp4'
-    },
-    {
-      name: 'result',
-      title: 'Result Handling',
-      description: 'Proper error and result handling patterns.',
-      category: 'Architecture',
-      tags: ['result', 'error', 'patterns'],
-      difficulty: 'intermediate',
-      hasVideo: true,
+      hasVideo: false,
       videoType: 'gif'
     }
   ]
 
-  // Get all examples
+  // Utility functions
+  const getExampleByName = (name: string): Example | undefined => {
+    return examples.find(example => example.name === name)
+  }
+
   const getAllExamples = (): Example[] => {
     return examples
   }
 
-  // Get example by name
-  const getExampleByName = (name: string): Example | null => {
-    return examples.find(example => example.name === name) || null
-  }
-
-  // Get examples by category
   const getExamplesByCategory = (category: string): Example[] => {
     return examples.filter(example => example.category === category)
   }
 
-  // Get examples by difficulty
+  const getCategories = (): string[] => {
+    return [...new Set(examples.map(example => example.category))]
+  }
+
   const getExamplesByDifficulty = (difficulty: 'beginner' | 'intermediate' | 'advanced'): Example[] => {
     return examples.filter(example => example.difficulty === difficulty)
   }
 
-  // Get all categories
-  const getAllCategories = (): string[] => {
-    return [...new Set(examples.map(example => example.category))].sort()
-  }
-
-  // Search examples
   const searchExamples = (query: string): Example[] => {
     const lowercaseQuery = query.toLowerCase()
     return examples.filter(example => 
@@ -541,11 +534,12 @@ export const useExamples = () => {
   }
 
   return {
-    getAllExamples,
+    examples,
     getExampleByName,
+    getAllExamples,
     getExamplesByCategory,
+    getCategories,
     getExamplesByDifficulty,
-    getAllCategories,
     searchExamples
   }
 }

@@ -1,0 +1,378 @@
+[
+  {
+    "name": "altscreen-toggle",
+    "combined_file": "combined.go",
+    "combined_lines":       87,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/altscreen-toggle",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/altscreen-toggle"
+  },
+  {
+    "name": "autocomplete",
+    "combined_file": "combined.go",
+    "combined_lines":      135,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/autocomplete",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/autocomplete"
+  },
+  {
+    "name": "cellbuffer",
+    "combined_file": "combined.go",
+    "combined_lines":      199,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/cellbuffer",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/cellbuffer"
+  },
+  {
+    "name": "chat",
+    "combined_file": "combined.go",
+    "combined_lines":      126,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/chat",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/chat"
+  },
+  {
+    "name": "composable-views",
+    "combined_file": "combined.go",
+    "combined_lines":      166,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/composable-views",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/composable-views"
+  },
+  {
+    "name": "credit-card-form",
+    "combined_file": "combined.go",
+    "combined_lines":      206,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/credit-card-form",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/credit-card-form"
+  },
+  {
+    "name": "debounce",
+    "combined_file": "combined.go",
+    "combined_lines":       70,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/debounce",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/debounce"
+  },
+  {
+    "name": "exec",
+    "combined_file": "combined.go",
+    "combined_lines":       75,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/exec",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/exec"
+  },
+  {
+    "name": "file-picker",
+    "combined_file": "combined.go",
+    "combined_lines":       98,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/file-picker",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/file-picker"
+  },
+  {
+    "name": "focus-blur",
+    "combined_file": "combined.go",
+    "combined_lines":       70,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/focus-blur",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/focus-blur"
+  },
+  {
+    "name": "fullscreen",
+    "combined_file": "combined.go",
+    "combined_lines":       60,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/fullscreen",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/fullscreen"
+  },
+  {
+    "name": "glamour",
+    "combined_file": "combined.go",
+    "combined_lines":      142,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/glamour",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/glamour"
+  },
+  {
+    "name": "help",
+    "combined_file": "combined.go",
+    "combined_lines":      151,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/help",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/help"
+  },
+  {
+    "name": "http",
+    "combined_file": "combined.go",
+    "combined_lines":       86,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/http",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/http"
+  },
+  {
+    "name": "list-default",
+    "combined_file": "combined.go",
+    "combined_lines":       90,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/list-default",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/list-default"
+  },
+  {
+    "name": "list-fancy",
+    "combined_file": "combined.go",
+    "combined_lines":      451,
+    "file_count": 3,
+    "code_url": "/code/bubbletea/list-fancy",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/list-fancy"
+  },
+  {
+    "name": "list-simple",
+    "combined_file": "combined.go",
+    "combined_lines":      132,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/list-simple",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/list-simple"
+  },
+  {
+    "name": "mouse",
+    "combined_file": "combined.go",
+    "combined_lines":       49,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/mouse",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/mouse"
+  },
+  {
+    "name": "package-manager",
+    "combined_file": "combined.go",
+    "combined_lines":      198,
+    "file_count": 2,
+    "code_url": "/code/bubbletea/package-manager",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/package-manager"
+  },
+  {
+    "name": "pager",
+    "combined_file": "combined.go",
+    "combined_lines":      128,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/pager",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/pager"
+  },
+  {
+    "name": "paginator",
+    "combined_file": "combined.go",
+    "combined_lines":       80,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/paginator",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/paginator"
+  },
+  {
+    "name": "pipe",
+    "combined_file": "combined.go",
+    "combined_lines":       97,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/pipe",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/pipe"
+  },
+  {
+    "name": "prevent-quit",
+    "combined_file": "combined.go",
+    "combined_lines":      158,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/prevent-quit",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/prevent-quit"
+  },
+  {
+    "name": "progress-animated",
+    "combined_file": "combined.go",
+    "combined_lines":       97,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/progress-animated",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/progress-animated"
+  },
+  {
+    "name": "progress-download",
+    "combined_file": "combined.go",
+    "combined_lines":      198,
+    "file_count": 2,
+    "code_url": "/code/bubbletea/progress-download",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/progress-download"
+  },
+  {
+    "name": "progress-static",
+    "combined_file": "combined.go",
+    "combined_lines":       97,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/progress-static",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/progress-static"
+  },
+  {
+    "name": "realtime",
+    "combined_file": "combined.go",
+    "combined_lines":       94,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/realtime",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/realtime"
+  },
+  {
+    "name": "result",
+    "combined_file": "combined.go",
+    "combined_lines":       90,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/result",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/result"
+  },
+  {
+    "name": "send-msg",
+    "combined_file": "combined.go",
+    "combined_lines":      135,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/send-msg",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/send-msg"
+  },
+  {
+    "name": "sequence",
+    "combined_file": "combined.go",
+    "combined_lines":       47,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/sequence",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/sequence"
+  },
+  {
+    "name": "set-window-title",
+    "combined_file": "combined.go",
+    "combined_lines":       39,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/set-window-title",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/set-window-title"
+  },
+  {
+    "name": "simple",
+    "combined_file": "combined.go",
+    "combined_lines":      170,
+    "file_count": 2,
+    "code_url": "/code/bubbletea/simple",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/simple"
+  },
+  {
+    "name": "spinner",
+    "combined_file": "combined.go",
+    "combined_lines":       77,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/spinner",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/spinner"
+  },
+  {
+    "name": "spinners",
+    "combined_file": "combined.go",
+    "combined_lines":      104,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/spinners",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/spinners"
+  },
+  {
+    "name": "split-editors",
+    "combined_file": "combined.go",
+    "combined_lines":      208,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/split-editors",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/split-editors"
+  },
+  {
+    "name": "stopwatch",
+    "combined_file": "combined.go",
+    "combined_lines":      107,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/stopwatch",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/stopwatch"
+  },
+  {
+    "name": "suspend",
+    "combined_file": "combined.go",
+    "combined_lines":       61,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/suspend",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/suspend"
+  },
+  {
+    "name": "table-resize",
+    "combined_file": "combined.go",
+    "combined_lines":      152,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/table-resize",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/table-resize"
+  },
+  {
+    "name": "table",
+    "combined_file": "combined.go",
+    "combined_lines":      188,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/table",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/table"
+  },
+  {
+    "name": "tabs",
+    "combined_file": "combined.go",
+    "combined_lines":      118,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/tabs",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/tabs"
+  },
+  {
+    "name": "textarea",
+    "combined_file": "combined.go",
+    "combined_lines":       85,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/textarea",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/textarea"
+  },
+  {
+    "name": "textinput",
+    "combined_file": "combined.go",
+    "combined_lines":       77,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/textinput",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/textinput"
+  },
+  {
+    "name": "textinputs",
+    "combined_file": "combined.go",
+    "combined_lines":      182,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/textinputs",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/textinputs"
+  },
+  {
+    "name": "timer",
+    "combined_file": "combined.go",
+    "combined_lines":      126,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/timer",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/timer"
+  },
+  {
+    "name": "tui-daemon-combo",
+    "combined_file": "combined.go",
+    "combined_lines":      143,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/tui-daemon-combo",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/tui-daemon-combo"
+  },
+  {
+    "name": "views",
+    "combined_file": "combined.go",
+    "combined_lines":      279,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/views",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/views"
+  },
+  {
+    "name": "window-size",
+    "combined_file": "combined.go",
+    "combined_lines":       48,
+    "file_count": 1,
+    "code_url": "/code/bubbletea/window-size",
+    "github_url": "https://github.com/charmbracelet/bubbletea/tree/main/examples/window-size"
+  }
+]
