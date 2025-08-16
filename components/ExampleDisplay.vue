@@ -8,9 +8,7 @@ interface Props {
 
 const props = defineProps<Props>()
 
-// Refs for copy functionality
-const codeRef = ref<HTMLElement>()
-const copied = ref(false)
+// Refs (codeRef removed as CodeBlock handles copying)
 
 // Media paths
 const videoPath = computed(() => {
@@ -18,8 +16,106 @@ const videoPath = computed(() => {
   return `/img/bubbletea/examples/${props.exampleName}/demo.${extension}`
 })
 
-// Placeholder code - will be replaced with actual code later
+// Generate example-specific code based on the example name
 const placeholderCode = computed(() => {
+  // Progress bar specific implementation
+  if (props.exampleName === 'progress-static') {
+    return `package main
+
+import (
+    "fmt"
+    "os"
+    "strings"
+    
+    tea "github.com/charmbracelet/bubbletea"
+    "github.com/charmbracelet/lipgloss"
+)
+
+// ${props.title} Example
+// Demonstrates a static progress bar with customizable styling
+
+type model struct {
+    progress float64
+    width    int
+}
+
+func initialModel() model {
+    return model{
+        progress: 0.65, // 65% completion
+        width:    40,   // Progress bar width
+    }
+}
+
+func (m model) Init() tea.Cmd {
+    return nil
+}
+
+func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
+    switch msg := msg.(type) {
+    case tea.KeyMsg:
+        switch msg.String() {
+        case "q", "ctrl+c", "esc":
+            return m, tea.Quit
+        case "up":
+            // Increase progress
+            if m.progress < 1.0 {
+                m.progress += 0.05
+            }
+        case "down":
+            // Decrease progress
+            if m.progress > 0.0 {
+                m.progress -= 0.05
+            }
+        }
+    }
+    return m, nil
+}
+
+func (m model) View() string {
+    // Calculate filled and empty segments
+    filled := int(m.progress * float64(m.width))
+    empty := m.width - filled
+    
+    // Create progress bar string
+    bar := strings.Repeat("█", filled) + strings.Repeat("░", empty)
+    
+    // Style the progress bar
+    progressStyle := lipgloss.NewStyle().
+        Foreground(lipgloss.Color("#FF6B35")).
+        Bold(true)
+    
+    labelStyle := lipgloss.NewStyle().
+        Foreground(lipgloss.Color("#FFFFFF")).
+        Bold(true)
+    
+    percentStyle := lipgloss.NewStyle().
+        Foreground(lipgloss.Color("#00FF87")).
+        Bold(true)
+    
+    // Format percentage
+    percentage := fmt.Sprintf("%.0f%%", m.progress*100)
+    
+    // Build the UI
+    title := labelStyle.Render("Static Progress Bar Demo")
+    progressBar := progressStyle.Render(fmt.Sprintf("[%s]", bar))
+    percent := percentStyle.Render(percentage)
+    
+    instructions := "↑/↓ to adjust • q to quit"
+    
+    return fmt.Sprintf("%s\\n\\n%s %s\\n\\n%s\\n", 
+        title, progressBar, percent, instructions)
+}
+
+func main() {
+    p := tea.NewProgram(initialModel())
+    if _, err := p.Run(); err != nil {
+        fmt.Printf("Error: %v", err)
+        os.Exit(1)
+    }
+}`
+  }
+  
+  // Default placeholder for other examples
   return `package main
 
 import (
@@ -68,18 +164,7 @@ func main() {
 }`
 })
 
-// Copy to clipboard functionality
-async function copyCode() {
-  try {
-    await navigator.clipboard.writeText(placeholderCode.value)
-    copied.value = true
-    setTimeout(() => {
-      copied.value = false
-    }, 2000)
-  } catch (err) {
-    console.error('Failed to copy code:', err)
-  }
-}
+// Copy functionality now handled by CodeBlock component
 
 // Video loading state
 const videoLoaded = ref(false)
@@ -242,45 +327,14 @@ const activeTab = ref<'demo' | 'code'>('demo')
 
       <!-- Code Tab Content -->
       <div v-show="activeTab === 'code'" class="space-y-4">
-        <!-- Code Editor -->
-        <div class="rounded-lg border border-alpha-10 bg-black-1 overflow-hidden shadow-lg">
-          <!-- Editor Header -->
-          <div class="flex items-center justify-between px-4 py-3 bg-gradient-to-b from-black-2 to-black-1 border-b border-alpha-10">
-            <div class="flex items-center gap-3">
-              <Icon name="simple-icons:go" size="20px" class="text-brand-4" />
-              <span class="text-sm font-medium text-primary">main.go</span>
-              <Badge variant="alpha" size="xs">Go</Badge>
-            </div>
-            <button
-              @click="copyCode"
-              class="flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-200"
-              :class="{
-                'bg-green-500/10 text-green-500 border border-green-500/20': copied,
-                'bg-hover-none hover:bg-hover border border-alpha-5 text-secondary hover:text-primary': !copied
-              }"
-            >
-              <Icon 
-                :name="copied ? 'heroicons:check' : 'heroicons:clipboard-document'" 
-                size="16px" 
-              />
-              <span>{{ copied ? 'Copied!' : 'Copy Code' }}</span>
-            </button>
-          </div>
-          
-          <!-- Code Content with Line Numbers -->
-          <div class="relative">
-            <div class="absolute left-0 top-0 bottom-0 w-12 bg-black-2 border-r border-alpha-5">
-              <div class="py-4 text-right pr-3">
-                <div v-for="i in 30" :key="i" class="text-xs text-help leading-relaxed">
-                  {{ i }}
-                </div>
-              </div>
-            </div>
-            <div class="pl-14 pr-4 py-4 overflow-x-auto">
-              <pre class="text-sm text-secondary font-mono leading-relaxed"><code>{{ placeholderCode }}</code></pre>
-            </div>
-          </div>
-        </div>
+        <!-- Enhanced Code Block with Shiki -->
+        <CodeBlock
+          :code="placeholderCode"
+          language="go"
+          theme="github-dark"
+          filename="main.go"
+          :show-line-numbers="true"
+        />
 
         <!-- Implementation Note -->
         <div class="flex items-start gap-3 p-4 bg-brand-alpha-8 border border-brand-alpha-24 rounded-lg">
