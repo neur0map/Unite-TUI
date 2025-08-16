@@ -1,12 +1,12 @@
 ---
 seo:
-  title: DailyHub - Inspirations
-  description: Get inspired with our curated collection of daily inspirations.
-  image: /og-image.jpeg
+  title: BubbleTea Examples - Unite UI
+  description: Explore comprehensive BubbleTea TUI component examples. Learn how to build beautiful terminal user interfaces with Unite UI and BubbleTea.
+  image: /logo.png
 ---
 
 ::page-wrapper
-  :::page-header{buy-button submit-button title="Inspirations"}
+  :::page-header{title="BubbleTea Examples"}
   :::
 
   :::page-divider
@@ -15,140 +15,161 @@ seo:
   :::section
     ::::card
     ---
-    badge: NEW
-    desc: Software
-    image: /img/inspirations-whop.png
-    title: Whop
-    to: https://whop.com/sell/
+    badge: Beginner
+    desc: Basic BubbleTea application with text display and quit handling
+    image: /img/bubbletea/examples/simple/thumbnail.webp
+    title: Simple Hello World
+    to: /bubbletea/examples/simple
     ---
     ::::
 
     ::::card
     ---
-    badge: NEW
-    desc: Software
-    image: /img/inspirations-authkit.png
-    title: Authkit
-    to: https://www.authkit.com/
+    badge: Beginner
+    desc: Interactive text input field with validation and styling
+    image: /img/bubbletea/examples/textinput/thumbnail.webp
+    title: Text Input
+    to: /bubbletea/examples/textinput
     ---
     ::::
 
     ::::card
     ---
-    badge: NEW
-    desc: Software
-    image: /img/inspirations-gitness.png
-    title: Gitness
-    to: https://gitness.com/
+    badge: Intermediate
+    desc: Form with multiple text input fields and navigation
+    image: /img/bubbletea/examples/textinputs/thumbnail.webp
+    title: Multiple Text Inputs
+    to: /bubbletea/examples/textinputs
     ---
     ::::
 
     ::::card
     ---
-    badge: NEW
-    desc: AI
-    image: /img/inspirations-nexusai.png
-    title: Nexus AI
-    to: https://nexusai-nuxt.stylokit.dev/
+    badge: Intermediate
+    desc: Multi-line text input with scroll support and word wrapping
+    image: /img/bubbletea/examples/textarea/thumbnail.webp
+    title: Text Area
+    to: /bubbletea/examples/textarea
     ---
     ::::
 
     ::::card
     ---
-    desc: AI
-    image: /img/inspirations-chaingpt.png
-    title: ChainGPT
-    to: https://www.chaingpt.org/
+    badge: Beginner
+    desc: Basic selectable list component with keyboard navigation
+    image: /img/bubbletea/examples/list-simple/thumbnail.webp
+    title: Simple List
+    to: /bubbletea/examples/list-simple
     ---
     ::::
 
     ::::card
     ---
-    desc: Agency
-    image: /img/inspirations-gsap.png
-    title: GSAP
-    to: https://gsap.com/
+    badge: Intermediate
+    desc: Feature-rich list with filtering, pagination, and custom styling
+    image: /img/bubbletea/examples/list-default/thumbnail.webp
+    title: Default List
+    to: /bubbletea/examples/list-default
     ---
     ::::
 
     ::::card
     ---
-    desc: Software
-    image: /img/inspirations-dimension.png
-    title: Dimension
-    to: https://www.dimension.dev/
+    badge: Advanced
+    desc: Advanced list component with icons, descriptions, and animations
+    image: /img/bubbletea/examples/list-fancy/thumbnail.webp
+    title: Fancy List
+    to: /bubbletea/examples/list-fancy
     ---
     ::::
 
     ::::card
     ---
-    desc: AI
-    image: /img/inspirations-google-deepmind.png
-    title: Google DeepMind
-    to: https://deepmind.google/technologies/gemini/#introduction
+    badge: Intermediate
+    desc: Sortable data table with column headers and row selection
+    image: /img/bubbletea/examples/table/thumbnail.webp
+    title: Data Table
+    to: /bubbletea/examples/table
     ---
     ::::
 
     ::::card
     ---
-    desc: Agency
-    image: /img/inspirations-visual-electric.png
-    title: Visual Electric
-    to: https://visualelectric.com/
+    badge: Beginner
+    desc: Animated loading spinner with customizable styles
+    image: /img/bubbletea/examples/spinner/thumbnail.webp
+    title: Loading Spinner
+    to: /bubbletea/examples/spinner
     ---
     ::::
 
     ::::card
     ---
-    desc: AI
-    image: /img/inspirations-humane.png
-    title: Humane
-    to: https://hu.ma.ne/aipin
+    badge: Intermediate
+    desc: Collection of different spinner styles and animations
+    image: /img/bubbletea/examples/spinners/thumbnail.webp
+    title: Multiple Spinners
+    to: /bubbletea/examples/spinners
     ---
     ::::
 
     ::::card
     ---
-    desc: E-Commerce
-    image: /img/inspirations-cowboy.png
-    title: Cowboy
-    to: https://cowboy.com/
+    badge: Beginner
+    desc: Simple progress bar with percentage display
+    image: /img/bubbletea/examples/progress-static/thumbnail.webp
+    title: Static Progress Bar
+    to: /bubbletea/examples/progress-static
     ---
     ::::
 
     ::::card
     ---
-    desc: Events
-    image: /img/inspirations-config-figma.png
-    title: Config Figma
-    to: https://config.figma.com/
+    badge: Intermediate
+    desc: Smooth animated progress bar with color transitions
+    image: /img/bubbletea/examples/progress-animated/thumbnail.webp
+    title: Animated Progress
+    to: /bubbletea/examples/progress-animated
     ---
     ::::
 
     ::::card
     ---
-    desc: Agency
-    image: /img/inspirations-mubien-brand.png
-    title: Mubien Brand
-    to: https://mubien.com/
+    badge: Intermediate
+    desc: Tabbed interface with keyboard navigation and content switching
+    image: /img/bubbletea/examples/tabs/thumbnail.webp
+    title: Tab Navigation
+    to: /bubbletea/examples/tabs
     ---
     ::::
 
     ::::card
     ---
-    desc: AI
-    image: /img/inspirations-spellar-ai.png
-    title: Speller AI
-    to: https://spellar.ai/
+    badge: Advanced
+    desc: Real-time chat interface with message history and input
+    image: /img/bubbletea/examples/chat/thumbnail.webp
+    title: Chat Interface
+    to: /bubbletea/examples/chat
     ---
     ::::
 
     ::::card
     ---
-    desc: Agency
-    image: /img/inspirations-wegrow.png
-    title: Wegrow
-    to: https://www.wegrow.design/
+    badge: Advanced
+    desc: Interactive credit card input form with validation
+    image: /img/bubbletea/examples/credit-card-form/thumbnail.webp
+    title: Credit Card Form
+    to: /bubbletea/examples/credit-card-form
+    ---
+    ::::
+
+    ::::card
+    ---
+    badge: Intermediate
+    desc: File system browser with selection and navigation
+    image: /img/bubbletea/examples/file-picker/thumbnail.webp
+    title: File Picker
+    to: /bubbletea/examples/file-picker
     ---
     ::::
   :::

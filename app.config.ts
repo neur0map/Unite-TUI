@@ -97,7 +97,19 @@ export default defineAppConfig({
               link: "/bubbletea/examples",
             },
           ],
-        }
+        },
+        {
+          label: "Lipgloss",
+          icon: "heroicons:fire",
+          link: "/lipgloss",
+          children: [
+            {
+              label: "Getting Started",
+              icon: "heroicons:play",
+              link: "/lipgloss/getting-started",
+            },
+          ],
+        },
       ],
     },
   ],
